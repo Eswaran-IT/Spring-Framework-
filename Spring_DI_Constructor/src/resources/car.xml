@@ -1,0 +1,13 @@
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    
+    <bean class="beans.Car" id="c">
+    	<constructor-arg index="1">
+    	     <value>Audi555</value> 
+	   	</constructor-arg>
+	   	<constructor-arg  value="ghaziabad" index="0"></constructor-arg>  
+    </bean>
+    
+    
+</beans>

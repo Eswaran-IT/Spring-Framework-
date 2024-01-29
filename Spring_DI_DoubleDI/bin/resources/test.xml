@@ -1,0 +1,18 @@
+	<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <!-- create Engine -->
+    <bean id="e" class="beans.Engine">
+        <property name="enginename" value="AudiEngine2015"/>
+    </bean>
+	<!-- create Car inject engine -->
+        <bean id="c1" class="beans.Car">
+            <property name="carname" value="Audi555"/>
+            <property name="engine" ref="e"/>
+        </bean>
+    <!-- create Car inject engine -->
+        <bean id="c2" class="beans.Car">
+            <property name="carname" value="Audi666"/>
+            <property name="engine" ref="e"/>
+        </bean>
+</beans>
